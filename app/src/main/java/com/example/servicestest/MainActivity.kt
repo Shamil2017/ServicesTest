@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.simpleService.setOnClickListener {
-            startService(MyServices.newIntent(this))
+            startService(MyServices.newIntent(this, 25))
         }
     }
 }
